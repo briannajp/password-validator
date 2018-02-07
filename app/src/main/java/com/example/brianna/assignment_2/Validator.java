@@ -11,7 +11,7 @@ public class Validator {
 
     /* Function: validate
      * Description: validate string input (password)
-     *              based on a set of rule.
+     *              based on a set of rules.
      *              Return the number of rules passed.
      */
     public int validate(String p)
