@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Assignment_2</string>
     <string name="submit">SUBMIT</string>
+    <string name="criteria">
+        Password must contain:\n
+        1. At least one lowercase letter\n
+        2. At least one uppercase letter\n
+        3. At least one digit\n
+        4. At least 8 characters\n
+        ** Password cannot be \'password\' **
+    </string>
+    <string name="strongPass">Password is strong.</string>
+    <string name="notStrongPass">Password is not strong.</string>
 </resources>

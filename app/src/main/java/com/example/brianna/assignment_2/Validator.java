@@ -1,3 +1,9 @@
+/*
+ *  Brianna Phillips - B00544633
+ *  Assignment 2 - CSCI 3130
+ *  February 10, 2018
+ */
+
 package com.example.brianna.assignment_2;
 
 /**
@@ -13,10 +19,12 @@ public class Validator {
     private boolean containsLower = false;
     private char ch;
 
-    /* Function: validate
-     * Description: validate string input (password)
-     *              based on a set of rule.
-     *              Return the number of rules passed.
+    /**
+     *  Validates the input text to determine
+     *  whether the input text passes all text
+     *  cases.
+     * @param p the inputted password
+     * @return  the number of test cases passed
      */
     public int validate(String p)
     {

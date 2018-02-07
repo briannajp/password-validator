@@ -1,3 +1,8 @@
+/*
+ *  Brianna Phillips - B00544633
+ *  Assignment 2 - CSCI 3130
+ *  February 10, 2018
+ */
 package com.example.brianna.assignment_2;
 
 import org.junit.Test;
