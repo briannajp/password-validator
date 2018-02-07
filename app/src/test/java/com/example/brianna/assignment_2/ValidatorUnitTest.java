@@ -12,6 +12,9 @@ public class ValidatorUnitTest {
 
     static String password1 = "password";
     static String password2 = "hello";
+    static String password3 = "hello1there";
+    static String password4 = "helloThere1";
+    static String password5 = "12345THERE!";
     static Validator validator;
 
     @BeforeClass
@@ -20,15 +23,32 @@ public class ValidatorUnitTest {
     }
 
     @Test
-    public void testPassword1()
+    public void testPassword()
     {
-        assertEquals(validator.validate(password1), 1); //expected this password to pass the length test
+        assertEquals(validator.validate(password1), 2); //expected this password to pass the length and lowercase test
     }
 
     @Test
-    public void testPassword2()
+    public void testLength()
     {
-        assertEquals(validator.validate(password2), 1); //expected this password to pass the password test
+        assertEquals(validator.validate(password2), 2); //expected this password to pass the password and lowercase test
     }
 
+    @Test
+    public void testOneDigit()
+    {
+        assertEquals(validator.validate(password3), 4);  //expected to pass password, length, digit, and lowercase tests
+    }
+
+    @Test
+    public void testOneCapital()
+    {
+        assertEquals(validator.validate(password4), 5); //expected to pass password, length, digit, lowercase and capital letter tests
+    }
+
+    @Test
+    public void testOneLowerCase()
+    {
+        assertEquals(validator.validate(password5), 4); //expected to pass all tests except for lower case
+    }
 }
